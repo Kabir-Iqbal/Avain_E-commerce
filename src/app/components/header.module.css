@@ -1,0 +1,33 @@
+.btn::after{
+    margin-top: 3px;
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #6c678b;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.btn:hover::after{
+    transform: scale(1);
+}
+
+
+.active::after{
+    margin-top: 3px;
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #6c678b;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.active,.active::after {
+    color: #413d57; 
+    transform: scale(1);
+  }
+
+  

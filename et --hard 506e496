@@ -1,0 +1,10 @@
+[33m91c2daf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to 91c2daf
+[33mb298895[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: rebase (abort): returning to refs/heads/main
+[33m506e496[m HEAD@{2}: commit: updated code
+[33m91c2daf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{3}: commit: Updated
+[33m3a44cac[m HEAD@{4}: commit: updated code
+[33m751542e[m HEAD@{5}: commit: addded e-commerec project
+[33mc39dd92[m HEAD@{6}: pull origin main --rebase (start): checkout c39dd92a77213bf3b870e5d102b8a7860d3f3b86
+[33mb298895[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{7}: commit: Pushed E-commerce store
+[33m1707474[m HEAD@{8}: Branch: renamed refs/heads/master to refs/heads/main
+[33m1707474[m HEAD@{10}: commit (initial): Initial commit from Create Next App
