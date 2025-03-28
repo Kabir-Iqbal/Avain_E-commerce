@@ -6,69 +6,68 @@ function Footer() {
     <>
       <div className="bg-[#2A254B] py-3  md:h-[380px]  " >
         <div className="flex  flex-col w-[90%] py-8 h-full justify-between  mx-auto   " >
-        <div className="flex justify-between h-full md:flex-row flex-col   " >
-          <div className="flex flex-wrap text-white items-start gap-6 w-[60%] md:gap-10 font-Clash " >
-            <div className="text-[16px w-[108px] h-[175px]  " >
-              Menu
-              <ul className=" mt-2 text-[14px] cursor-pointer  flex flex-col font-santoshi  " >
-                <li> New arrivals </li>
-                <li> Best sellers</li>
-                <li> Recently viewed </li>
-                <li> Popular this week</li>
-                <li> All products</li>
-              </ul>
-            </div>
-            <div className="text-[16px]  w-[84px] h-[206px] font-Clash "  >
-              Categories
-              <ul className=" mt-2 cursor-pointer text-[14px] flex flex-col font-santoshi  ">
-                <li>Crockery</li>
-                <li>Furniture </li>
-                <li>Homeware</li>
-                <li>Plant pots</li>
-                <li>Chairs</li>
-                <li>Crockery</li>
-              </ul>
-            </div>
-            <div className="text-[16px]  w-[102px] h-[175px] font-Clash " >
-              Our company
-              <ul className="mt-2  cursor-pointer text-[14px] flex flex-col font-santoshi ">
-                <li> <Link href="/About" > About us </Link> </li>
-                <li>Vacancies</li>
-                <li> Contact us</li>
-                <li>Privacy</li>
-                <li>Returns policy </li>
-              </ul>
-            </div>
+        <div className=" flex flex-col md:flex-row md:justify-between gap-8 " >
+          <div className="flex gap-8 md:gap-16 w-full md:w-[60%] flex-wrap text-white items-start font-Clash " >
+          <div>
+            <h3 className="text-lg font-semibold">Menu</h3>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li>New arrivals</li>
+              <li>Best sellers</li>
+              <li>Recently viewed</li>
+              <li>Popular this week</li>
+              <li>All products</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Categories</h3>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li>Crockery</li>
+              <li>Furniture</li>
+              <li>Homeware</li>
+              <li>Plant pots</li>
+              <li>Chairs</li>
+              <li>Crockery</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Our company</h3>
+            <ul className="mt-2 space-y-1 text-sm">
+              <li><Link href="/About">About us</Link></li>
+              <li>Vacancies</li>
+              <li>Contact us</li>
+              <li>Privacy</li>
+              <li>Returns policy</li>
+            </ul>
+          </div>
           </div>
 
-          {/* right side */}
-          <div className=" w-[90%]  md:w-[40%] flex flex-col h- text-[16px] gap-3 font-Clash  text-white" >
-            Join our mailing list
-            <div className="flex  " >
-              <input className="border-[1px] border-gray-500 w-[70%]  md:w-[350px] px-3 h-[56px] bg-[#2A254B] " type="gmail" placeholder="your@email.com" name="gmail" id="gmail" />
-              <div className=" w-[118px] h-[56px] text-black bg-white flex justify-center items-center  " >
-                <button className="font-Clash " > Sign up</button>
-              </div>
-            </div>
+            {/* Right Side */}
+        <div className="w-full md:w-[40%]">
+          <h3 className="text-lg text-white font-semibold">Join our mailing list</h3>
+          <div className="flex mt-3">
+            <input 
+              className="w-full md:w-[75%] h-[50px] px-4 bg-[#2A254B] border border-gray-500 placeholder-gray-400 text-white focus:outline-none"
+              type="email" placeholder="your@email.com" />
+            <button className="w-[100px] h-[50px] bg-white text-black font-semibold hover:bg-gray-200 transition">Sign up</button>
           </div>
         </div>
+      </div>
         
-        <div className=" text-white " >
-          <div className="bg-[#4E4D93] h-[1px] w-full my-1 " ></div>
-          <div className='flex justify-center md:justify-between my-1 ' >
-            <div className='text-sm text-center md:text-start font-santoshi ' >Copyright 2022 Avion LTD</div>
-            <div className="md:flex text-xl gap-2 cursor-pointer hidden  " >
-            <FaLinkedin />
-            <FaFacebook />
-            <FaInstagram />
-            <FaSkype />
-            <FaTwitter />
-            <FaPinterest />
-            </div>
+         {/* Bottom Section */}
+      <div className="mt-8 border-t text-white border-gray-500 pt-4 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm">&copy; 2022 Avion LTD</p>
+          <div className="flex gap-4 mt-3 md:mt-0 text-xl">
+            <FaLinkedin className="cursor-pointer hover:text-gray-400" />
+            <FaFacebook className="cursor-pointer hover:text-gray-400" />
+            <FaInstagram className="cursor-pointer hover:text-gray-400" />
+            <FaSkype className="cursor-pointer hover:text-gray-400" />
+            <FaTwitter className="cursor-pointer hover:text-gray-400" />
+            <FaPinterest className="cursor-pointer hover:text-gray-400" />
           </div>
         </div>
-
-      </div>  
+      </div>
+      </div>
       </div>
     </>
   )

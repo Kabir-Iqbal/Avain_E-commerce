@@ -100,7 +100,7 @@ function Header() {
 
   return (
     <>
-      <div className=" max-w-[1440px] mx-auto fixed top-0 w-full bg-white z-50 " >
+      <div className=" max-w-[1440px]  mx-auto fixed top-0 w-full bg-white z-50 " >
         {/* Banner */}
         <header className="flex  h-[85px] md:h-[51px]   text-[#22202E] items-center py-4  md:py-0 justify-between px-6 mt-3 text-xl " >
 
