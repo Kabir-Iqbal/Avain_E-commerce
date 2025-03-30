@@ -36,7 +36,7 @@ const StripeCheck = ({ amount }: { amount: number }) => {
         if (typeof window !== 'undefined') {
             setURL(window.location.host === 'localhost:3000'
                 ? 'http://localhost:3000'
-                : 'https://hackathon-3-e-commerce-store.vercel.app');
+                : 'https://avain-e-commerce.vercel.app');
         }
     }, []);
 
