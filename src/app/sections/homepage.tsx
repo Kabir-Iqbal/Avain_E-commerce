@@ -160,18 +160,20 @@ function Hero() {
               <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-3 md:gap-5">
                 {Product.slice(0, 4).map((product: any) => (
                   <Link href={`${product.slug.current}`} key={product.id}>
-                    <div className="flex flex-col h-[375px] gap-4 bg-gray-100 shadow-sm shadow-black group cursor-pointer overflow-hidden">
+                    <div className="flex flex-col h-[300px] sm:h-[350px] md:h-[375px] gap-3 sm:gap-4 bg-gray-100 shadow-sm shadow-black group cursor-pointer overflow-hidden">
                       <div className="w-full mx-auto h-[80%] sm:h-[70%]">
                         <Image
-                          className="w-full object-cover h-[180px] sm:h-[220px] md:h-72 group-hover:scale-105 duration-200 transition-transform"
+                          className="w-full object-cover h-[220px] sm:h-[230px] md:h-72 group-hover:scale-105 duration-200 transition-transform"
                           src={`${product.image}`}
                           alt={`${product.name}`}
                           width={300}
                           height={150}
+                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                          loading="lazy"
                         />
                       </div>
 
-                      <div className="text-sm gap-1 h-[20%] sm:h-[30%] text-[#2A254B] flex flex-col my-5 px-1">
+                      <div className="text-sm gap-1 h-[20%] sm:h-[30%] text-[#2A254B] flex flex-col my-3 px-1">
                         <p>{product.name}</p>
                         <p>{`$${product.price}`}</p>
                       </div>
@@ -202,7 +204,7 @@ function Hero() {
         <div className="mt-16 w-[90%] mx-auto md:w-full h-fit">
           <p className="text-2xl font-semibold text-[#2A254B]">New ceramics</p>
 
-          {/* اگر پروڈکٹس لوڈ نہیں ہوئے تو اسپنر شو ہوگا */}
+        
           {Product.length === 0 ? (
             <div className="flex gap-5 mt-6 mb-0 md:my-6 h-[450px]">
               <div className="flex-1  justify-center items-center bg-gray-100 shadow-sm shadow-black h-full w-[50%] hidden md:flex">
@@ -230,6 +232,7 @@ function Hero() {
                         alt={`${product2.name}`}
                         width={455}
                         height={200}
+                      
                       />
                     </div>
                     <div className="text-sm gap-1 text-[#2A254B] flex flex-col my-3 px-1">
@@ -243,14 +246,16 @@ function Hero() {
               <div className="flex-1 grid grid-cols-2 gap-3 h-96">
                 {Product.slice(4, 6).map((product2: any) => (
                   <Link href={`${product2.slug.current}`} key={product2.id}>
-                    <div className="flex flex-col gap-3 h-[300px] sm:h-[338px] md:h-[450px] bg-gray-100 shadow-sm shadow-black overflow-hidden group cursor-pointer">
+                    <div className="flex flex-col h-[300px] sm:h-[350px] md:h-[450px] gap-3 sm:gap-4 bg-gray-100 shadow-sm shadow-black group cursor-pointer overflow-hidden">
                       <div className="w-full mx-auto h-[70%] md:h-[80%] sm:h-[75%]">
                         <Image
-                          className="w-full object-cover h-[180px] sm:h-[220px] md:h-[330px] group-hover:scale-105 duration-200 transition-transform"
+                          className="w-full object-cover h-[220px] sm:h-[230px] md:h-[330px] group-hover:scale-105 duration-200 transition-transform"
                           src={product2.image}
                           alt="The Dandy chair"
                           width={300}
                           height={150}
+                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                          loading="lazy"
                         />
                       </div>
 

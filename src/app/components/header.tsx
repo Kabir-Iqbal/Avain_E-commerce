@@ -185,9 +185,11 @@ function Header() {
         </header >
 
         <div className=" h-[1px] hidden md:block w-[95%] mx-auto my-[6px] bg-slate-400  " ></div>
+          
 
         <nav className="flex relative   " >
-          <ul className={`flex flex-col md:h-[55px] md:flex-row md:justify-center   absolute right-0  z-10 w-[50%] md:w-[90%] justify-center  h-screen   text-center  md:py-0 bg-white md:static md:items-start  text-[#726E8D] text-sm gap-5 py-7  md:mx-auto ${isOpen ? " top-[5px] right-0 " : "top-[-100vh] "}  `} >
+          <ul className={`inset-y-0 right-0 w-64  sm:my-0 md:static md:w-[90%] flex flex-col md:flex-row items-center gap-4 transform transition-transform duration-300 ease-in-out  bg-white    text-[#726E8D] h-screen    md:py-0 text-sm  py-7 md:mx-auto 
+            ${isOpen ? 'transplate-x-0' : 'translate-x-full md:translate-x-0' } md:flex   md:h-[55px] md:items-center  md:justify-center  absolute   z-10 justify-center    `} >
             {/* <ul className={`flex flex-col  absolute right-0 top-[80px] z-10 w-[50% h-full bg-white   `} > */}
             <Link href="/" ><li className={`${Styles.btn}  hover:text-[#5c5879]  ${isactive("/") ? Styles.active : ""} `} > Home  </li> </Link>
             <Link href="/productlisting"><li className={`${Styles.btn} hover:text-[#5c5879] ${isactive("/productlisting") ? Styles.active : ""} `}  >Product Listing  </li></Link>

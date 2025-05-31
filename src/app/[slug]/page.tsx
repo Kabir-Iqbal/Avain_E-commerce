@@ -298,10 +298,3 @@ const Page = (props: any) => {
 }
 
 export default Page
-
-
-
-
-
-
-
