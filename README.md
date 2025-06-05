@@ -6,6 +6,7 @@
 
 ## 🚀 Features
 
+- 🔐 User authentication with Clerk.js
 - 🏠 Home, Products, About & Contact pages
 - 🛒 Add-to-cart with quantity control
 - 🔍 Search and sort (by date or price)
